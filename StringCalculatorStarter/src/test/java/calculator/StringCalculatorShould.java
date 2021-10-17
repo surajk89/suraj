@@ -10,6 +10,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StringCalculatorShould {
 
+	private StringCalculator StringCalculator;
+
+	public void init() {
+		StringCalculator = new StringCalculator();
+	}
     @Test
     void empty_string_should_return_0() {
         StringCalculator stringCalculator = new StringCalculator();
