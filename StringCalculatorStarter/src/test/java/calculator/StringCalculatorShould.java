@@ -27,4 +27,11 @@ class StringCalculatorShould {
     	StringCalculator stringCalculator = new StringCalculator();
     	assertEquals(3, stringCalculator.add("1,2"));
     }
+    
+	@Test
+	void stringWithUnknownNumberWithCommaDelimterReturnNumberAsSum() {
+		StringCalculator stringCalculator = new StringCalculator();
+		// Allow the Add method to handle an unknown amount of numbers
+		assertEquals(10, stringCalculator.add("1,2,3,4"));
+	}
 }
